@@ -13,14 +13,14 @@
 
 ---
 
-## ✅ Work Completed So Far
+## ✅ Work Completed
 
 ### 🔹 Step 1: File Loading
 * Loaded the CSV file using `pandas` with proper encoding (`ISO-8859-1`).
 
 ### 🔹 Step 2: Initial Inspection
 * Checked column names, data types, null values, and duplicates.
-* Analyzed dataset structure for missing or irrelevant fields.
+* Analyzed dataset structure and cleaned up irrelevant fields.
 
 ### 🔹 Step 3: Data Cleaning
 * Dropped unnecessary columns like `index`, `New`, `PendingS`.
@@ -35,53 +35,69 @@
 
 #### 📅 Sales Overview
 * Aggregated sales by **month** to identify trends.
-* Visualized monthly sales using a line chart.
+* Identified **April 2022** as the month with highest sales volume.
 
 #### 🛍️ Product Analysis
-* Identified top-selling **product categories**.
-* Analyzed **sizes** and **quantities** sold.
-* Created bar charts for category-wise performance.
+* Top-selling categories by revenue:
+  - **T-shirts**
+  - **Shirts**
+  - **Blazers**
+* Quantity and size breakdown visualized.
 
 #### 🚚 Fulfillment Analysis
-* Compared total sales based on **Fulfilment Method** (Amazon vs Merchant).
-* Highlighted which method generated more revenue.
+* Compared Amazon-fulfilled vs merchant-fulfilled orders.
+* Amazon-fulfilled orders generated more consistent revenue.
 
 #### 🌍 Geographical Analysis
-* Identified **Top 10 States** and **Top 10 Cities** by total sales.
-* Visualized regional performance using bar plots.
+* Top 3 states by sales:
+  - **Maharashtra**
+  - **Karnataka**
+  - **Telangana**
+* Top-performing cities: **Bengaluru**, **Hyderabad**, **Mumbai**
+
+#### 👥 Customer Segmentation (RFM Analysis)
+* Used **RFM (Recency, Frequency, Monetary)** model to group customers based on behavior.
+* Segmented users into:
+  - **Loyal customers**: 2.37%
+  - **Regular customers**: 97.63%
+* Visualized customer tiers to identify retention and loyalty opportunities.
 
 ---
 
 ## 💡 Business Insights
 
-* **April** was the peak month for sales.
-* **T-shirts**, **Shirts**, and **Blazers** dominated sales by category.
-* **Amazon-fulfilled orders** outperformed Merchant-fulfilled orders in volume.
-* Sales are highest in metro cities: **Bengaluru**, **Hyderabad**, and **Mumbai**.
-* Focused regional marketing and better fulfillment optimization could enhance revenue.
+* **April 2022** had the highest revenue peak — ideal for seasonal marketing.
+* Focus marketing on **T-shirts, Shirts, and Blazers** — highest earning categories.
+* Fulfillment by Amazon outperforms merchant handling — optimize for FBA.
+* Strong revenue regions: **Maharashtra, Karnataka, Telangana**
+* Customer base is mostly regular — loyalty programs can boost retention.
 
 ---
 
-## 📈 Visualizations Used
+## 📈 Visualizations
 
 - Monthly Sales Trend (Line Chart)
-- Top Categories by Revenue (Bar Chart)
-- Fulfilment Method Comparison (Bar Chart)
-- Top 10 States and Cities by Sales (Bar Charts)
+- Category-wise Sales Performance (Bar Chart)
+- Fulfillment Comparison (Bar Chart)
+- State-wise and City-wise Sales (Bar Charts)
+- RFM Segmentation Bar Chart
 
 ---
 
-## 🛠️ Tools & Libraries Used
+## 🛠️ Tools & Libraries
 
-- **Python**: `pandas`, `matplotlib`, `seaborn`, `numpy`
+- **Python**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`
 - **Jupyter Notebook**
-- **CSV File Handling**
+- **Data Source**: Amazon Sales CSV Report
 
 ---
 
-## 🚧 Next Steps (Pending)
+## 🚧 Next Steps
 
-- 👥 **Customer Segmentation** (based on order frequency/spending) – *optional*
-- 📊 **Dashboard or Report Generation** in PDF/Excel/Power BI
-- 🧾 **Final Report Compilation** with visual insights
-- 📁 **Documentation for GitHub**, final folder structuring
+- 📊 Optional: Interactive **Dashboard** (Power BI or Plotly Dash)
+- 📄 Export to **PDF/Excel Report** for stakeholders
+- 📁 Finalize folder structure, **push to GitHub** with documentation
+- 🧠 Consider applying **forecasting** for future sales predictions
+
+---
+
